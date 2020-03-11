@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+*{box-sizing: border-box;}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #EDF4ED;
+  color:#444;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.searchBarContainer{
+  width: 750px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #C4CBD1;
+  border-radius: 5px;
+  box-shadow: 4px 4px 6px -3px rgba(0,0,0,0.75);
+}
+.searchBarContainer h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+input{
+  padding: 13px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.formContainer{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.form{
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.expForm{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.incForm{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.moneyContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.secondContainer{
+  text-align: center;
+}
+.totalPlus{
+  background: white;
+  width: 325px;
+  height: 125px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 28px;
+  box-shadow: 4px 4px 6px -3px rgba(0,0,0,0.75);
+  border-radius: 20px;
+  color: rgb(16, 192, 16);
+
+}
+.totalNegative{
+  background: white;
+  width: 325px;
+  height: 125px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 28px;
+  box-shadow: 4px 4px 6px -3px rgba(0,0,0,0.75);
+  border-radius: 20px;
+  color: rgb(221, 67, 67);
+}
+.expenseContainer{
+  width: 300px;
+}
+.incomeContainer{
+  width: 300px;
+}
+.incomeContainer h2{
+  color: rgb(16, 192, 16);;
+}
+.expenseContainer h2{
+  color: rgb(221, 67, 67);
+}
+.listItem{
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  border-bottom: 1px dotted #999;
+  box-shadow: 2px 2px 3px -3px rgba(0,0,0,0.75);
+  padding: 8px;
+  border-radius: 3px;
+  background-color: rgba(127, 141, 153, 0.219);
+}
+.listItem:hover{
+  background-color: rgba(127, 141, 153, 0.082) ;
+}
+.listItem:last-child{
+  border-bottom: none;
+}
+.btn{
+cursor: pointer;
+padding: 10px 20px;
+border-radius: 5px;
+border: none;
+font-size: 18px;
+background-color: #8FB2BF;
+box-shadow: 4px 4px 6px -3px rgba(0,0,0,0.75);
+}
+.btn:hover{
+background-color: rgba(143, 178, 191, 0.63);
+}
+.btn:focus{
+  outline: none;
+}
+.deleteBTN{
+  color: red;
+  font-size: 14px;
+  cursor: pointer;
+}
+.expBTN{
+
+}
+.incBTN{
+
+}
+.taxBTN{
+
 }
